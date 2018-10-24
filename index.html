@@ -15,6 +15,15 @@
             background-color: #111; /* Black */
             overflow-x: hidden; /* Disable horizontal scroll */
             padding-top: 80px;
+
+            
+        }
+
+        .main-text {
+            top: 60px;
+            left: 165px;
+            width: 500px;
+            position: fixed;
         }
 
         /* The navigation menu links */
@@ -37,45 +46,51 @@
 
     <body>
         <header>
-            <!--navbar-->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">TextEditor</a>
-            <button class="navbar-toggler" type="button" dtat-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Lecture 1 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Lecture 2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Lecture 3</a>
-                </li>
-              </ul>   <!--End of links-->
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-dark static-top bg-dark">
+                    <a class="navbar-brand" href="#">TextEditor</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Lecture 1 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lecture 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lecture 3</a>
+                        </li>
+                        </ul> 
+                    </div>
+                </nav>
             </div>
-          </nav>
-    
         </header>
-        
-        
-        <!-- Side navigation -->
-        <div class="sidenav">
-            <a href="#">Class 1</a>
-            <a href="#">Class 2</a>
-            <a href="#">Class 3</a>
-            <a href="#">Class 4</a>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>Class 1</li>
+                        <li>Class 2</li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea class="form-control" id="notes" rows="20"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10 text-right">Submit me</div>
+            </div>
+
         </div>
 
-        <main role="main" class="container text-center">
-            <h1>Stuff goes here</h1>
-            <p>Here are your notes, congratulations loser</p>
-
-
-        </main>
-        
 
     </body>
 
